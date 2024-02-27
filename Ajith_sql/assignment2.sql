@@ -1,0 +1,20 @@
+-- use company;
+-- select country_name from country;
+-- select * from country;
+-- select email ,phone_number from employees;
+-- select * from employees where last_name like "Fay";
+-- select employee_id,hire_date from employees where last_name like "Grant%" or last_name like "Whalen%" ; 
+-- select first_name, last_name from employees where job_id=(select job_id from jobs where job_title="shipping clerk");
+-- select employee_id,first_name,last_name,department_id from employees where department_id="8";
+-- select department_id,department_name from departments order by department_id desc;
+-- SELECT DISTINCT first_name,last_name,hire_date FROM employees WHERE hire_date between '1995-01-01' and '1997-12-31';
+-- select * from employees where last_name like "k%";
+-- select job_title from jobs where max_salary <5000;
+-- select lower(email) as email from employees;
+-- select * from employees where hire_date like "1995%";
+-- insert into employees(employee_id,first_name,last_name,department_id) values (708,"Paul","Newton",11);
+-- delete from departments where department_name="shipping" ;
+-- set sql_safe_updates=0;
+-- set sql_safe_updates=1;
+-- select * from employees where department_id=5;
+
