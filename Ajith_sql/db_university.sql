@@ -1,0 +1,28 @@
+-- create database university
+-- use university
+-- create table student(name varchar(50),student_no int,class int,major varchar(10),primary key(student_no));
+-- create table course(course_name varchar(30),course_no varchar(20),credit_hours int,department varchar(20),primary key(course_no));
+-- create table section(section_identifier int,course_no varchar(20),semester varchar(20),year int,instructor varchar(20),primary key(section_identifier)); 
+-- create table grade(student_no int,section_identifier int,grade varchar(10),primary key(student_no,section_identifier));
+-- create table prerequisite(course_no varchar(20),prerequisite_no varchar(20),primary key(course_no,prerequisite_no));
+-- insert into student values("Smith",17,1,"CS");
+-- insert into student values("Brown",8,2,"CS");
+-- insert into course values("Intro to computer science","CS1310",4,"CS");
+-- insert into course values("Data structures","CS3320",4,"CS");
+-- insert into course values("Discrete mathematics","MATH2410",3,"MATH");
+-- insert into course values("Database","CS3380",3,"CS");
+-- insert into section values(85,"MATH2410","fall",07,"King");
+-- insert into section values(92,"CS1310","fall",07,"Anderson");
+-- insert into section values(102,"CS3320","spring",08,"Knuth");
+-- insert into section values(112,"MATH2410","fall",08,"Chang");
+-- insert into section values(119,"CS1310","fall",08,"Anderson");
+-- insert into section values(135,"CS3380","fall",08,"Stone");
+-- insert into grade values(17,112,"B");
+-- insert into grade values(17,119,"C");
+-- insert into grade values(8,85,"A");
+-- insert into grade values(8,92,"A");
+-- insert into grade values(8,102,"B");
+-- insert into grade values(8,135,"A");
+-- insert into prerequisite values("CS3380","CS3320");
+-- insert into prerequisite values("CS3380","MATH2410");
+-- insert into prerequisite values("CS3320","CS1310");

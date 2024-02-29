@@ -1,0 +1,9 @@
+-- select student.name ,course.course_name,grade.grade from grade 
+-- inner join student on student.student_no=grade.student_no
+-- inner join section on grade.section_identifier=section.section_identifier 
+-- inner join course on section.course_no=course.course_no where student.name="smith";
+-- select student.name,grade.grade from student 
+-- inner join grade on student.student_no=grade.student_no
+-- inner join section on grade.section_identifier=section.section_identifier 
+-- inner join course on section.course_no=course.course_no 
+-- where course.course_name="Database" and section.semester="fall";

@@ -3,7 +3,7 @@
 -- select * from country;
 -- select email ,phone_number from employees;
 -- select * from employees where last_name like "Fay";
--- select employee_id,hire_date from employees where last_name like "Grant%" or last_name like "Whalen%" ; 
+-- select employee_id,hire_date from employees where last_name like "Grant" or last_name like "Whalen" ; 
 -- select first_name, last_name from employees where job_id=(select job_id from jobs where job_title="shipping clerk");
 -- select employee_id,first_name,last_name,department_id from employees where department_id="8";
 -- select department_id,department_name from departments order by department_id desc;
@@ -17,4 +17,5 @@
 -- set sql_safe_updates=0;
 -- set sql_safe_updates=1;
 -- select * from employees where department_id=5;
-
+-- select * from employees where dayname(hire_date)="thursday";
+ -- select * from employees where year(hire_date)= "1995";
