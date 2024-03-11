@@ -1,0 +1,79 @@
+-- use university;
+-- call factorial ();
+-- call in_factorial(6)
+-- call select_stud ();
+-- create database problem;
+-- use problem
+
+-- call in_factorial(5,@f);
+-- select @f;
+-- PROCEDURE CODE
+-- CREATE DEFINER=`root`@`localhost` PROCEDURE `in_factorial`(in num int , out f int)
+-- BEGIN
+-- set f = 1;
+-- while num>0
+-- do
+-- set f=f*num;
+-- set num=num-1;
+-- end while;
+-- END
+
+-- call even_odd(24);
+-- PROCEDURE COODE
+-- BEGIN
+-- declare f varchar(30);
+-- if (num % 2 = 0)
+-- then
+-- set f="Even number";
+-- else
+-- set f="Odd number";
+-- end if;
+-- select f;
+-- END
+
+-- call mark_grade(92);
+-- PROCEDURE CODE
+-- BEGIN
+-- declare grade varchar(30);
+-- if (mark >= 90)
+-- then
+-- set grade="Your got S grade";
+-- elseif (mark >=80)
+-- then
+-- set grade="Your got A grade";
+-- elseif (mark >=70)
+-- then
+-- set grade="Your got B grade";
+-- elseif (mark >=60)
+-- then
+-- set grade="Your got C grade";
+-- elseif (mark >=50)
+-- then
+-- set grade="Your got D grade";
+-- else
+-- set grade="Your are Fail";
+-- end if;
+-- select grade;
+-- END
+
+-- call pos_neg(-45);
+-- BEGIN
+-- declare sign varchar(20);
+-- if (num > 0)
+-- then
+-- set sign="It is positive";
+-- elseif (num < 0)
+-- then
+-- set sign="It is negative";
+-- else
+-- set sign="It is zero";
+-- end if;
+-- select sign;
+-- END
+
+-- day_datecall day_date('2024-03-11');
+-- PROCEDURE
+-- CREATE DEFINER=`root`@`localhost` PROCEDURE `day_date`(in dd date)
+-- BEGIN
+-- select dayname(dd) as day_name;
+-- END
